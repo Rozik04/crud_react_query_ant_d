@@ -6,12 +6,12 @@ import { useQueryClient } from "@tanstack/react-query";
 
 interface Props {
   closeModal: () => void;
-  defaultValue?: dataSourse;
+  initialData?: dataSourse;
 }
 
-export const ColorForm = ({ closeModal, defaultValue }: Props) => {
+export const ColorForm = ({ closeModal, initialData }: Props) => {
     const { mutate, isPending } = useCreateColor();
-    const [name, setName] = useState(defaultValue?.name || "");
+    const [name, setName] = useState(initialData?.name || "");
     const clinet = useQueryClient();
 
 
