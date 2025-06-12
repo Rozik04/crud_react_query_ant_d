@@ -32,6 +32,7 @@ export const Colors = () => {
 
 const handleUpdate = (el : dataSourse) => {
   setInitialData(el)
+   open2(); 
 }
 
   if (isLoading) return <p>Loading...</p>;

@@ -1,7 +1,7 @@
 import { request } from "../../../../config/request";
 import { useMutation } from "@tanstack/react-query";
 
-interface colorEditT {
+export interface colorEditT {
   name: string;
   id?: string;
 }
